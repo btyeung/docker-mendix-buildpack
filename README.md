@@ -1,7 +1,7 @@
 # Docker Mendix Buildpack
 
 ## Notes / Usage
-This has been modified to perform and export MDA builds. This uses the existing docker build images so mx-build doesn't need to be used separately. 
+This has been modified to perform and export MDA builds. This uses the existing docker build images so mx-build doesn't need to be used separately. This copies a built mda package out from a created container, does not start the container, and then cleans the container from the internal docker registry.
 
 ## Updated instructions
 * Place the mpk file in the "downloads" directory (create if necessary)
