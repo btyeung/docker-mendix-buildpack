@@ -2,6 +2,12 @@
 
 ![Test status](https://github.com/mendix/docker-mendix-buildpack/workflows/Test/badge.svg)
 
+## Updated instructions
+This has been modified to perform MDA builds by using the make file within. Place the mpk file in the "downloads" directory (create if necessary), and run "make build-extract"
+
+The output will be located in the project directory with a suffix of .mda
+
+## Original Notes
 The Mendix Buildpack for Docker (aka docker-mendix-buildpack) provides a standard way to build and run your Mendix Application in a [Docker](https://www.docker.com/) container.
 
 ## Try a sample mendix application
