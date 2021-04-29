@@ -36,6 +36,9 @@ build-image-extract:
 
 build-extract: unpack-project build-image-extract
 	./extract.sh $(PROJECT_NAME)
+	
+build-auto-extract: build-image-extract
+	./extract.sh $(PROJECT_NAME)
 
 #TODO: add parameter name of mda file
 extract-only:
